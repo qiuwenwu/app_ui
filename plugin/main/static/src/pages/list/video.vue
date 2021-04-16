@@ -23,7 +23,7 @@
 					<mm_row>
 						<mm_col width="100">
 							<div class="list_video">
-								<mm_video v-for="(o, k) in list" :key="k" :obj="o"></mm_video>
+								<item_video v-for="(o, k) in list" :key="k" :obj="o"></item_video>
 							</div>
 						</mm_col>
 					</mm_row>

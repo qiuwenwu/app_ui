@@ -26,8 +26,8 @@
 									<h5 @click="$copy(code_1)">样式一</h5>
 								</div>
 								<div class="card_body">
-									<mm_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback"></mm_reverse>
-									<mm_reverse title="人气" v-model="query.orderby" :options="options_hot" :func="callback"></mm_reverse>
+									<control_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback"></control_reverse>
+									<control_reverse title="人气" v-model="query.orderby" :options="options_hot" :func="callback"></control_reverse>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -37,8 +37,8 @@
 									<h5 @click="$copy(code_2)">样式二</h5>
 								</div>
 								<div class="card_body">
-									<mm_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback" display="2"></mm_reverse>
-									<mm_reverse title="人气" v-model="query.orderby" :options="options_hot" :func="callback" display="2"></mm_reverse>
+									<control_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback" display="2"></control_reverse>
+									<control_reverse title="人气" v-model="query.orderby" :options="options_hot" :func="callback" display="2"></control_reverse>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -64,10 +64,10 @@
 				options_time: ["`create_time` asc", "`create_time` desc"],
 				options_hot: ["`hot` asc", "`hot` desc"],
 				code_1: `
-<mm_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback"></mm_reverse>
+<control_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback"></control_reverse>
 `,
 				code_2: `
-<mm_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback" display="2"></mm_reverse>
+<control_reverse title="时间" v-model="query.orderby" :options="options_time" :func="callback" display="2"></control_reverse>
 `
 			}
 		},

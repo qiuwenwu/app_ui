@@ -26,7 +26,7 @@
 									<h5 @click="$copy(code_1)">样式一</h5>
 								</div>
 								<div class="card_body">
-									<mm_number v-model="value" :min="min" :max="max" :num="num"></mm_number>
+									<control_number v-model="value" :min="min" :max="max" :num="num"></control_number>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -36,7 +36,7 @@
 									<h5 @click="$copy(code_2)">样式二</h5>
 								</div>
 								<div class="card_body">
-									<mm_number v-model="value" :min="min" :max="max" :num="num"></mm_number>
+									<control_number v-model="value" :min="min" :max="max" :num="num"></control_number>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -65,12 +65,12 @@
 				num: 5,
 				code_1: `
 <mm_card class="pc">
-<mm_number v-model="value" :min="min" :max="max" :num="num"></mm_number>
+<control_number v-model="value" :min="min" :max="max" :num="num"></control_number>
 </mm_card>
 `,
 				code_2: `
 <mm_card class="mobile">
-<mm_number v-model="value" :min="min" :max="max" :num="num"></mm_number>
+<control_number v-model="value" :min="min" :max="max" :num="num"></control_number>
 </mm_card>
 `
 			}

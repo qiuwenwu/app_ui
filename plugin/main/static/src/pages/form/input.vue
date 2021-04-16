@@ -26,10 +26,10 @@
 									<h5 @click="$copy(code_1)">样式一(PC)</h5>
 								</div>
 								<div class="card_body">
-									<mm_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名"></mm_input>
-									<mm_input title="年龄" type="number" :min="min" :max="max" :max_length="max_length" v-model="num"></mm_input>
-									<mm_input title="密码" type="password" v-model="pass" desc="请输入密码"></mm_input>
-									<mm_input title="余额" type="number" v-model="money" unit="元"></mm_input>
+									<control_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名"></control_input>
+									<control_input title="年龄" type="number" :min="min" :max="max" :max_length="max_length" v-model="num"></control_input>
+									<control_input title="密码" type="password" v-model="pass" desc="请输入密码"></control_input>
+									<control_input title="余额" type="number" v-model="money" unit="元"></control_input>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -39,10 +39,10 @@
 									<h5 @click="$copy(code_2)">样式二(mobile)</h5>
 								</div>
 								<div class="card_body">
-									<mm_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名"></mm_input>
-									<mm_input title="年龄" type="number" :min="min" :max="max" :max_length="max_length" v-model="num"></mm_input>
-									<mm_input title="密码" type="password" v-model="pass" desc="请输入密码"></mm_input>
-									<mm_input title="余额" type="number" v-model="money" unit="元"></mm_input>
+									<control_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名"></control_input>
+									<control_input title="年龄" type="number" :min="min" :max="max" :max_length="max_length" v-model="num"></control_input>
+									<control_input title="密码" type="password" v-model="pass" desc="请输入密码"></control_input>
+									<control_input title="余额" type="number" v-model="money" unit="元"></control_input>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -76,12 +76,12 @@
 				money: 0,
 				code_1: `
 <mm_card class="pc">
-<mm_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名" unit="元"></mm_input>
+<control_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名" unit="元"></control_input>
 </mm_card>
 `,
 				code_2: `
 <mm_card class="mobile">
-<mm_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名" unit="元"></mm_input>
+<control_input title="姓名" type="text" :min_length="min_length" :max_length="max_length" v-model="str" desc="请输入真实姓名" unit="元"></control_input>
 </mm_card>
 `
 			}

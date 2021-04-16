@@ -1,5 +1,5 @@
 <template>
-	<mm_page id="page_tag">
+	<mm_page id="page_card">
 		<header>
 			<mm_warp>
 				<mm_container>
@@ -7,7 +7,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>标签栏</span>
+									<span>文本</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -21,6 +21,10 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<mm_card class="silde_test">
+								<h5>默认块</h5>
+								<swiper_text :list="list"></swiper_text>
+							</mm_card>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -32,11 +36,12 @@
 <script>
 	export default {
 		data() {
-			return {}
-		},
-		methods: {
-			func(name, param1, param2) {
-
+			return {
+				list: [{
+					title: "标题",
+					url: "/",
+					image: "/img/default.png",
+				}]
 			}
 		}
 	}

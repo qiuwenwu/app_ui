@@ -23,7 +23,7 @@
 						<mm_col width="100">
 							<mm_card>
 								<div class="card_body">
-									<mm_rich id="test" v-model="content"></mm_rich>
+									<control_rich id="test" v-model="content"></control_rich>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -44,12 +44,12 @@
 </template>
 
 <script>
-	import mm_rich from '/src/components/form/mm_rich.vue';
+	import control_rich from '/src/components/control/control_rich.vue';
 
 	export default {
 		template: __template__,
 		components: {
-			mm_rich
+			control_rich
 		},
 		data() {
 			return {

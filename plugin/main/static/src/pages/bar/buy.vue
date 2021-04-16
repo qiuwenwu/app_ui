@@ -5,12 +5,12 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<mm_card url="/">
+							<mm_view url="/">
 								<h3>
 									<span>购物栏</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
-							</mm_card>
+							</mm_view>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -21,7 +21,6 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<mm_card :func="func"></mm_card>
 						</mm_col>
 					</mm_row>
 				</mm_container>

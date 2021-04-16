@@ -26,7 +26,7 @@
 									<h5 @click="$copy(code_1)">样式一(PC)</h5>
 								</div>
 								<div class="card_body">
-									<mm_checkbox :symbol="symbol" v-model="value" :options="options"></mm_checkbox>
+									<control_checkbox :symbol="symbol" v-model="value" :options="options"></control_checkbox>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -36,7 +36,7 @@
 									<h5 @click="$copy(code_2)">样式二(mobile)</h5>
 								</div>
 								<div class="card_body">
-									<mm_checkbox :symbol="symbol" v-model="value" :options="options"></mm_checkbox>
+									<control_checkbox :symbol="symbol" v-model="value" :options="options"></control_checkbox>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -82,12 +82,12 @@
 				],
 				code_1: `
 <mm_card class="pc">
-<mm_checkbox v-model="value" :options="options"></mm_checkbox>
+<control_checkbox v-model="value" :options="options"></control_checkbox>
 </mm_card>
 `,
 				code_2: `
 <mm_card class="mobile">
-<mm_checkbox v-model="value" :options="options"></mm_checkbox>
+<control_checkbox v-model="value" :options="options"></control_checkbox>
 </mm_card>
 `
 

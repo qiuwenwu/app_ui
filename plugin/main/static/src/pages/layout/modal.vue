@@ -29,7 +29,7 @@
 
 							<mm_view>
 								<h5>出入场方式 {{ value }}</h5>
-								<mm_radio v-model="value" :options="options"></mm_radio>
+								<control_radio v-model="value" :options="options"></control_radio>
 							</mm_view>
 						</mm_col>
 					</mm_row>

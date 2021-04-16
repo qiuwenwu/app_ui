@@ -26,11 +26,11 @@
 								<div class="card_body">
 									<mm_view>
 										<h5 @click="$copy(code_1)">样式一</h5>
-										<mm_switch title="开关" v-model="value"></mm_switch>
+										<control_switch title="开关" v-model="value"></control_switch>
 									</mm_view>
 									<mm_view>
 										<h5 @click="$copy(code_2)">样式二</h5>
-										<mm_switch title="开关" v-model="value" display="2"></mm_switch>
+										<control_switch title="开关" v-model="value" display="2"></control_switch>
 									</mm_view>
 								</div>
 							</mm_card>
@@ -41,11 +41,11 @@
 								<div class="card_body">
 									<mm_view>
 										<h5 @click="$copy(code_3)">样式三</h5>
-										<mm_switch title="开关" v-model="value"></mm_switch>
+										<control_switch title="开关" v-model="value"></control_switch>
 									</mm_view>
 									<mm_view>
 										<h5 @click="$copy(code_4)">样式四</h5>
-										<mm_switch title="开关" v-model="value" display="2"></mm_switch>
+										<control_switch title="开关" v-model="value" display="2"></control_switch>
 									</mm_view>
 								</div>
 							</mm_card>
@@ -77,22 +77,22 @@
 				value: 1,
 				code_1: `
 <mm_card class="pc">
-	<mm_switch title="开关" v-model="value"></mm_switch>
+	<control_switch title="开关" v-model="value"></control_switch>
 </mm_card>
 `,
 				code_2: `
 <mm_card class="pc">
-	<mm_switch title="开关" v-model="value" display="2"></mm_switch>
+	<control_switch title="开关" v-model="value" display="2"></control_switch>
 </mm_card>
 `,
 				code_3: `
 <mm_card class="mobile">
-	<mm_switch title="开关" v-model="value" display="2"></mm_switch>
+	<control_switch title="开关" v-model="value" display="2"></control_switch>
 </mm_card>
 `,
 				code_4: `
 <mm_card class="mobile">
-	<mm_switch title="开关" v-model="value" display="2"></mm_switch>
+	<control_switch title="开关" v-model="value" display="2"></control_switch>
 </mm_card>
 `
 			}

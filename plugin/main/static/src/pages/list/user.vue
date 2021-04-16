@@ -23,7 +23,7 @@
 					<mm_row>
 						<mm_col width="100">
 							<div class="list_user">
-								<mm_user v-for="(o, k) in list" :key="k" :obj="o"></mm_user>
+								<item_user v-for="(o, k) in list" :key="k" :obj="o"></item_user>
 							</div>
 						</mm_col>
 					</mm_row>

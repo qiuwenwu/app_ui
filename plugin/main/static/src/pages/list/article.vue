@@ -26,7 +26,7 @@
 								<div class="card_head">样式一</div>
 								<div class="card_body">
 									<mm_list col="2" class="list_article">
-										<mm_article v-for="(o, k) in list" :key="k" :obj="o"></mm_article>
+										<item_article v-for="(o, k) in list" :key="k" :obj="o"></item_article>
 									</mm_list>
 								</div>
 							</mm_card>

@@ -258,9 +258,9 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 		},
 		{
 			// 图片列表
-			path: "/list/img",
+			path: "/list/image",
 			component: function(resolve) {
-				return require(['vue!./pages/list/img.vue'], resolve);
+				return require(['vue!./pages/list/image.vue'], resolve);
 			}
 		},
 		{
@@ -336,37 +336,37 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 		/* slide */
 		{
 			// 卡片轮播
-			path: "/slide/card",
+			path: "/swiper/card",
 			component: function(resolve) {
-				return require(['vue!./pages/slide/card.vue'], resolve);
+				return require(['vue!./pages/swiper/card.vue'], resolve);
 			}
 		},
 		{
 			// 图片轮播
-			path: "/slide/img",
+			path: "/swiper/image",
 			component: function(resolve) {
-				return require(['vue!./pages/slide/img.vue'], resolve);
+				return require(['vue!./pages/swiper/image.vue'], resolve);
 			}
 		},
 		{
 			// 文本轮播
-			path: "/slide/text",
+			path: "/swiper/text",
 			component: function(resolve) {
-				return require(['vue!./pages/slide/text.vue'], resolve);
+				return require(['vue!./pages/swiper/text.vue'], resolve);
 			}
 		},
 		{
 			// 页面轮播
-			path: "/slide/page",
+			path: "/swiper/page",
 			component: function(resolve) {
-				return require(['vue!./pages/slide/page.vue'], resolve);
+				return require(['vue!./pages/swiper/page.vue'], resolve);
 			}
 		},
 		{
 			// 菜单轮播
-			path: "/slide/menu",
+			path: "/swiper/menu",
 			component: function(resolve) {
-				return require(['vue!./pages/slide/menu.vue'], resolve);
+				return require(['vue!./pages/swiper/menu.vue'], resolve);
 			}
 		},
 		{

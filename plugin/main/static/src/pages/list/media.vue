@@ -23,7 +23,7 @@
 					<mm_row>
 						<mm_col width="100">
 							<div class="list_media">
-								<mm_media v-for="(o, k) in list" :key="k" :obj="o"></mm_media>
+								<item_media v-for="(o, k) in list" :key="k" :obj="o"></item_media>
 							</div>
 						</mm_col>
 					</mm_row>

@@ -26,7 +26,7 @@
 									<h5 @click="$copy(code_1)">样式一(PC)</h5>
 								</div>
 								<div class="card_body">
-									<mm_radio v-model="value" :options="options"></mm_radio>
+									<control_radio v-model="value" :options="options"></control_radio>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -36,7 +36,7 @@
 									<h5 @click="$copy(code_2)">样式二(mobile)</h5>
 								</div>
 								<div class="card_body">
-									<mm_radio v-model="value" :options="options"></mm_radio>
+									<control_radio v-model="value" :options="options"></control_radio>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -80,12 +80,12 @@
 				],
 				code_1: `
 <mm_card class="pc">
-	<mm_radio v-model="value" :options="options"></mm_radio>
+	<control_radio v-model="value" :options="options"></control_radio>
 </mm_card>
 `,
 				code_2: `
 <mm_card class="mobile">
-	<mm_radio v-model="value" :options="options"></mm_radio>
+	<control_radio v-model="value" :options="options"></control_radio>
 </mm_card>
 `
 			}

@@ -23,7 +23,7 @@
 					<mm_row>
 						<mm_col width="100">
 							<mm_view>
-								<mm_select v-model="col" :options="options"></mm_select>
+								<control_select v-model="col" :options="options"></control_select>
 								<mm_btn class="btn_info" @click.native="set_layout()">切换排版方式</mm_btn>
 							</mm_view>
 						</mm_col>
@@ -31,7 +31,7 @@
 							<mm_card>
 								<div class="card_body">
 									<mm_list :col="col" :class="'list-x list_base ' + list_layout[select]">
-										<mm_base v-for="(o, k) in list" :key="k" :obj="o"></mm_base>
+										<item_base v-for="(o, k) in list" :key="k" :obj="o"></item_base>
 									</mm_list>
 								</div>
 							</mm_card>

@@ -23,7 +23,7 @@
 					<mm_row>
 						<mm_col width="100">
 							<div class="list_music">
-								<mm_music v-for="(o, k) in list" :key="k" :obj="o"></mm_music>
+								<item_music v-for="(o, k) in list" :key="k" :obj="o"></item_music>
 							</div>
 						</mm_col>
 					</mm_row>

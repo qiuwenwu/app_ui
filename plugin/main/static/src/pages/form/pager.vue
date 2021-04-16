@@ -26,7 +26,7 @@
 									<h5 @click="$copy(code_1)">样式一</h5>
 								</div>
 								<div class="card_body">
-									<mm_pager v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+									<control_pager v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -36,7 +36,7 @@
 									<h5 @click="$copy(code_2)">样式二</h5>
 								</div>
 								<div class="card_body">
-									<mm_pager class="mm_pager-x" v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+									<control_pager class="control_pager-x" v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -46,7 +46,7 @@
 									<h5 @click="$copy(code_3)">样式三</h5>
 								</div>
 								<div class="card_body">
-									<mm_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+									<control_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -56,7 +56,7 @@
 									<h5 @click="$copy(code_4)">样式四</h5>
 								</div>
 								<div class="card_body">
-									<mm_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo" :icons="['首页', '上一页', '下一页', '尾页']"></mm_pager>
+									<control_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo" :icons="['首页', '上一页', '下一页', '尾页']"></control_pager>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -86,16 +86,16 @@
 				},
 				count: 2000,
 				code_1: `
-<mm_pager v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+<control_pager v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 `,
 				code_2: `
-<mm_pager class="mm_pager-x" v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+<control_pager class="control_pager-x" v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 `,
 				code_3: `
-<mm_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo"></mm_pager>
+<control_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo"></control_pager>
 `,
 				code_4: `
-<mm_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo" :icons="['首页', '上一页', '下一页', '尾页']"></mm_pager>
+<control_pager display="2" v-model="query.page" :count="count / query.size" :func="goTo" :icons="['首页', '上一页', '下一页', '尾页']"></control_pager>
 `
 			}
 		},

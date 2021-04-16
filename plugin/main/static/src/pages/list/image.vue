@@ -1,6 +1,6 @@
 <template>
 	<!-- 图片 -->
-	<mm_page id="page_img">
+	<mm_page id="page_image">
 		<header>
 			<mm_warp>
 				<mm_container>
@@ -30,42 +30,42 @@
 							<mm_view>
 								<h5>样式一</h5>
 								<mm_list col="4" id="list_img_1" class="list_img item-tb" v-bind:class="{'icon-x': border}">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式二</h5>
 								<mm_list col="4" id="list_img_2" class="list_img item-tb">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式三</h5>
 								<mm_list col="2" id="list_img_2" class="list_img item-ltb">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式四</h5>
 								<mm_list col="2" id="list_img_2" class="item-rtb">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式五</h5>
 								<mm_list col="2" id="list_img_2" class="item-ll">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式五</h5>
 								<mm_list col="2" id="list_img_2" class="item-rr">
-									<mm_img v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></mm_img>
+									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
 								</mm_list>
 							</mm_view>
 						</mm_col>
@@ -137,27 +137,27 @@
 		border-radius: 0.25rem;
 	}
 
-	#list_img_2 .mm_img {
+	#list_img_2 .item_image {
 		border-radius: 0.25rem;
 		background: #fff;
 		overflow: hidden;
 		box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 17, 27, 0.1);
 	}
 
-	#page_img #list_img_2 .mm_img {
+	#page_image #list_img_2 .item_image {
 		border: none;
 		/* box-shadow: none; */
 	}
 	
-	#page_img #list_img_2 figure {
+	#page_image #list_img_2 figure {
 		border: none;
 	}
 
-	#page_img #list_img_2 .title {
+	#page_image #list_img_2 .title {
 		text-align: left;
 	}
 
-	#page_img #list_img_2 .tip {
+	#page_image #list_img_2 .tip {
 		position: absolute;
 		bottom: 2.5rem;
 		right: 0;
@@ -165,7 +165,7 @@
 		color: #fff;
 	}
 
-	#page_img .mm_item {
+	#page_image .mm_item {
 		padding: 0.5rem;
 	}
 </style>
