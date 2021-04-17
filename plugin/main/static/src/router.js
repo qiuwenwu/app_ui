@@ -43,24 +43,10 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			}
 		},
 		{
-			// 源代码
-			path: "/content/pre",
-			component: function(resolve) {
-				return require(['vue!./pages/content/pre.vue'], resolve);
-			}
-		},
-		{
 			// 颜色
 			path: "/content/color",
 			component: function(resolve) {
 				return require(['vue!./pages/content/color.vue'], resolve);
-			}
-		},
-		{
-			// 二维码
-			path: "/content/qrcode",
-			component: function(resolve) {
-				return require(['vue!./pages/content/qrcode.vue'], resolve);
 			}
 		},
 		/* 布局 */
@@ -97,13 +83,6 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			path: "/layout/modal",
 			component: function(resolve) {
 				return require(['vue!./pages/layout/modal.vue'], resolve);
-			}
-		},
-		{
-			// 精灵
-			path: "/layout/sptite",
-			component: function(resolve) {
-				return require(['vue!./pages/layout/sptite.vue'], resolve);
 			}
 		},
 		{
@@ -200,17 +179,10 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			}
 		},
 		{
-			// 选项卡栏
-			path: "/bar/tabs",
-			component: function(resolve) {
-				return require(['vue!./pages/bar/tabs.vue'], resolve);
-			}
-		},
-		{
 			// 标签栏
-			path: "/bar/tag",
+			path: "/bar/tab",
 			component: function(resolve) {
-				return require(['vue!./pages/bar/tag.vue'], resolve);
+				return require(['vue!./pages/bar/tab.vue'], resolve);
 			}
 		},
 		{
@@ -367,6 +339,27 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			path: "/swiper/menu",
 			component: function(resolve) {
 				return require(['vue!./pages/swiper/menu.vue'], resolve);
+			}
+		},
+		{
+			// 精灵
+			path: "/expand/sptite",
+			component: function(resolve) {
+				return require(['vue!./pages/expand/sptite.vue'], resolve);
+			}
+		},
+		{
+			// 源代码
+			path: "/expand/pre",
+			component: function(resolve) {
+				return require(['vue!./pages/expand/pre.vue'], resolve);
+			}
+		},
+		{
+			// 二维码
+			path: "/expand/qrcode",
+			component: function(resolve) {
+				return require(['vue!./pages/expand/qrcode.vue'], resolve);
 			}
 		},
 		{

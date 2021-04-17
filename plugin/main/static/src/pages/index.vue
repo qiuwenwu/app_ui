@@ -88,6 +88,16 @@
 								</div>
 							</mm_card>
 						</mm_col>
+						<mm_col>
+							<mm_card>
+								<div class="card_head">拓展</div>
+								<div class="card_body">
+									<mm_list col="1" class="item-lr content-right">
+										<item_base class="arrow" v-for="(o, idx) in expand" :key="idx" :obj="o" :viewmodel="{content:'name'}"></item_base>
+									</mm_list>
+								</div>
+							</mm_card>
+						</mm_col>
 					</mm_row>
 				</mm_container>
 			</mm_warp>
@@ -115,20 +125,10 @@
 						url: "/content/loading"
 					},
 					{
-						title: "源代码",
-						name: "mm_pre",
-						url: "/content/pre"
-					},
-					{
 						title: "颜色",
 						name: "mm_color",
 						url: "/content/color"
 					},
-					{
-						title: "二维码",
-						name: "mm_qrcode",
-						url: "/content/qrcode"
-					}
 				],
 				layout: [{
 						title: "栅格",
@@ -159,11 +159,6 @@
 						title: "模态窗",
 						name: "mm_modal",
 						url: "/layout/modal"
-					},
-					{
-						title: "精灵",
-						name: "mm_sptite",
-						url: "/layout/sptite"
 					}
 				],
 				form: [{
@@ -212,20 +207,52 @@
 						url: "/form/rich"
 					}
 				],
-				expand: [{
-						title: "导航",
-						name: "mm_nav",
-						url: "/expand/nav"
+				expand: [
+					{
+						title: "源代码",
+						name: "expand_pre",
+						url: "/expand/pre"
 					},
 					{
-						title: "选项卡",
-						name: "mm_tab",
-						url: "/expand/tab"
+						title: "二维码",
+						name: "expand_qrcode",
+						url: "/expand/qrcode"
 					},
 					{
-						title: "折叠项",
-						name: "mm_folding",
-						url: "/expand/folding"
+						title: "精灵",
+						name: "expand_sptite",
+						url: "/expand/sptite"
+					}
+				],
+				nav: [{
+						title: "主导航",
+						name: "nav_main",
+						url: "/nav/main"
+					},
+					{
+						title: "侧边导航",
+						name: "nav_side",
+						url: "/nav/side"
+					},
+					{
+						title: "顶部导航",
+						name: "nav_top",
+						url: "/nav/top"
+					},
+					{
+						title: "底部导航",
+						name: "nav_bottom",
+						url: "/nav/bottom"
+					},
+					{
+						title: "快捷导航",
+						name: "nav_quick",
+						url: "/nav/quick"
+					},
+					{
+						title: "用户导航",
+						name: "nav_user",
+						url: "/nav/user"
 					}
 				],
 				bar: [{
@@ -245,8 +272,8 @@
 					},
 					{
 						title: "标签栏",
-						name: "bar_tag",
-						url: "/bar/tag"
+						name: "bar_tab",
+						url: "/bar/tab"
 					},
 					{
 						title: "排序栏",
@@ -276,62 +303,62 @@
 				],
 				list: [{
 						title: "基础列表",
-						name: "item_base",
+						name: "list_base",
 						url: "/list/base"
 					},
 					{
 						title: "图片列表",
-						name: "item_image",
+						name: "list_image",
 						url: "/list/image"
 					},
 					{
 						title: "文章列表",
-						name: "item_article",
+						name: "list_article",
 						url: "/list/article"
 					},
 					{
 						title: "通讯录列表",
-						name: "item_contact",
+						name: "list_contact",
 						url: "/list/contact"
 					},
 					{
 						title: "消息列表",
-						name: "item_message",
+						name: "list_message",
 						url: "/list/message"
 					},
 					{
 						title: "新闻列表",
-						name: "item_news",
+						name: "list_news",
 						url: "/list/news"
 					},
 					{
 						title: "号码列表",
-						name: "item_number",
+						name: "list_number",
 						url: "/list/number"
 					},
 					{
 						title: "商品列表",
-						name: "item_goods",
+						name: "list_goods",
 						url: "/list/goods"
 					},
 					{
 						title: "问答列表",
-						name: "item_question",
+						name: "list_question",
 						url: "/list/question"
 					},
 					{
 						title: "用户列表",
-						name: "item_user",
+						name: "list_user",
 						url: "/list/user"
 					},
 					{
 						title: "视频列表",
-						name: "item_video",
+						name: "list_video",
 						url: "/list/video"
 					},
 					{
 						title: "音乐列表",
-						name: "item_music",
+						name: "list_music",
 						url: "/list/music"
 					}
 				],

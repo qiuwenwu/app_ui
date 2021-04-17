@@ -23,50 +23,44 @@
 					<mm_row>
 						<mm_col width="100">
 							<mm_view>
+								<control_select v-model="col" :options="options"></control_select>
+								<mm_btn class="btn_info" @click.native="set_layout()">切换排版方式</mm_btn>
+							</mm_view>
+						</mm_col>
+						<mm_col width="100">
+							<mm_view>
 								<button class="btn_info" @click="border = !border"><span v-if="border">无</span><span v-else>加</span>边框</button>
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
 							<mm_view>
 								<h5>样式一</h5>
-								<mm_list col="4" id="list_img_1" class="list_img item-tb" v-bind:class="{'icon-x': border}">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_1" class="list_img item-tb" v-bind:class="{'icon-x': border}"></list_image>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式二</h5>
-								<mm_list col="4" id="list_img_2" class="list_img item-tb">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_2" class="list_img item-tb"></list_image>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式三</h5>
-								<mm_list col="2" id="list_img_2" class="list_img item-ltb">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_2" class="list_img item-ltb"></list_image>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式四</h5>
-								<mm_list col="2" id="list_img_2" class="item-rtb">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_2" class="item-rtb"></list_image>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式五</h5>
-								<mm_list col="2" id="list_img_2" class="item-ll">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_2" class="item-ll"></list_image>
 							</mm_view>
 
 							<mm_view>
 								<h5>样式五</h5>
-								<mm_list col="2" id="list_img_2" class="item-rr">
-									<item_image v-for="(o, k) in list" :key="k" :url="o.url" :obj="o"></item_image>
-								</mm_list>
+								<list_image :col="col" :list="list" id="list_img_2" class="item-rr"></list_image>
 							</mm_view>
 						</mm_col>
 					</mm_row>
@@ -81,6 +75,54 @@
 		data() {
 			return {
 				border: false,
+				select: 0,
+				col: "4",
+				list_layout: [
+					"item-lr img-small",
+					"item-ll img-small",
+					"item-ltb img-base",
+					"item-rtb img-base",
+					"item-rl img-base",
+					"item-rr img-base",
+					"item-tb"
+				],
+				options: [{
+						name: "1列",
+						value: "1"
+					},
+					{
+						name: "2列",
+						value: "2"
+					},
+					{
+						name: "3列",
+						value: "3"
+					},
+					{
+						name: "4列",
+						value: "4"
+					},
+					{
+						name: "5列",
+						value: "5"
+					},
+					{
+						name: "6列",
+						value: "6"
+					},
+					{
+						name: "8列",
+						value: "8"
+					},
+					{
+						name: "10列",
+						value: "10"
+					},
+					{
+						name: "12列",
+						value: "12"
+					}
+				],
 				list: [{
 						title: "测试1",
 						image: "/img/default.png",
@@ -99,22 +141,22 @@
 						tip: "12集全",
 						tag: "独播",
 						description: "这是一个图片的描述，为了方便演示排版而写",
-						url: "/"
+						url: "#"
 					},
 					{
 						title: "测试4",
 						image: "/img/default.png",
-						url: "/"
+						url: "#"
 					},
 					{
 						title: "测试5",
 						image: "/img/default.png",
-						url: "/"
+						url: "#"
 					},
 					{
 						title: "测试6",
 						image: "/img/default.png",
-						url: "/"
+						url: "#"
 					},
 					{
 						title: "测试7",
@@ -128,6 +170,15 @@
 					}
 				]
 			}
+		},
+		methods: {
+			set_layout() {
+				if (this.select < this.list_layout.length - 1) {
+					this.select++;
+				} else {
+					this.select = 0;
+				}
+			}
 		}
 	}
 </script>
@@ -137,14 +188,14 @@
 		border-radius: 0.25rem;
 	}
 
-	#list_img_2 .item_image {
+	#list_img_2 .list_image {
 		border-radius: 0.25rem;
 		background: #fff;
 		overflow: hidden;
 		box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 17, 27, 0.1);
 	}
 
-	#page_image #list_img_2 .item_image {
+	#page_image #list_img_2 .list_image {
 		border: none;
 		/* box-shadow: none; */
 	}

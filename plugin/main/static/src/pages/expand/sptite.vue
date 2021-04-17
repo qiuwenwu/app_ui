@@ -22,22 +22,22 @@
 					<mm_row>
 						<mm_col width="100">
 							<mm_view>
-								<mm_sptite v-for="(o, i) in list" :key="i" :client="o.client" :name="o.name" :size="o.size" :pos="o.pos" :align="o.align"
-								 :tag="o.tag" :type="o.type" :src="o.src" background="o.background" :z-index="o.zIndex"></mm_sptite>
+								<expand_sptite v-for="(o, i) in list" :key="i" :client="o.client" :name="o.name" :size="o.size" :pos="o.pos" :align="o.align"
+								 :tag="o.tag" :type="o.type" :src="o.src" background="o.background" :z-index="o.zIndex"></expand_sptite>
 							</mm_view>
 							<mm_view>
-								<mm_sptite v-for="(o, i) in list_form" :key="i" :client="o.client" :name="o.name" :size="o.size" v-model="o.text"
-								 :pos="o.pos" :align="o.align" :tag="o.tag" :type="o.type" :background="o.background" :z-index="o.zIndex"></mm_sptite>
+								<expand_sptite v-for="(o, i) in list_form" :key="i" :client="o.client" :name="o.name" :size="o.size" v-model="o.text"
+								 :pos="o.pos" :align="o.align" :tag="o.tag" :type="o.type" :background="o.background" :z-index="o.zIndex"></expand_sptite>
 							</mm_view>
 							<mm_view>
-								<mm_sptite v-for="(o, i) in list_form" :key="i" :client="o.client" :name="o.name" :size="o.size" v-model="o.text"
+								<expand_sptite v-for="(o, i) in list_form" :key="i" :client="o.client" :name="o.name" :size="o.size" v-model="o.text"
 								 :pos="o.pos" :align="o.align" :tag="o.tag" :type="o.type" :background="o.background" :z-index="o.zIndex">
 									<template slot-scope="scope">
 										<a :style="scope.style_sub">
 											你好
 										</a>
 									</template>
-								</mm_sptite>
+								</expand_sptite>
 							</mm_view>
 						</mm_col>
 					</mm_row>

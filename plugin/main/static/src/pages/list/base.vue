@@ -30,9 +30,7 @@
 						<mm_col width="100">
 							<mm_card>
 								<div class="card_body">
-									<mm_list :col="col" :class="'list-x list_base ' + list_layout[select]">
-										<item_base v-for="(o, k) in list" :key="k" :obj="o"></item_base>
-									</mm_list>
+									<list_base :col="col" :list="list" :class="'list-x list_base ' + list_layout[select]"></list_base>
 								</div>
 							</mm_card>
 						</mm_col>

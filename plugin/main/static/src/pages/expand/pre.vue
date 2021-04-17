@@ -24,9 +24,9 @@
 							<mm_card>
 								<div class="card_head">带复制</div>
 								<div class="card_body">
-									<mm_pre :code="code">
+									<expand_pre :code="code">
 										<code class="javascript"></code>
-									</mm_pre>
+									</expand_pre>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -34,11 +34,11 @@
 							<mm_card>
 								<div class="card_head">不带复制</div>
 								<div class="card_body">
-									<mm_pre>
+									<expand_pre>
 										<code class="typescript">
 											{{ code }}
 										</code>
-									</mm_pre>
+									</expand_pre>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -52,12 +52,12 @@
 <script>
 	// import vs from '/highlight/styles/vs.css';
 
-	import mm_pre from '/src/components/content/mm_pre.vue';
+	import expand_pre from '/src/components/expand/expand_pre.vue';
 
 	export default {
 		template: __template__,
 		components: {
-			mm_pre
+			expand_pre
 		},
 		data() {
 			return {
@@ -66,7 +66,7 @@ var date = new Date();
 export default {
 template: __template__,
 	components: {
-		mm_pre
+		expand_pre
 	}
 }`
 			}

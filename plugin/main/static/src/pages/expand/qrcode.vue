@@ -24,7 +24,7 @@
 							<mm_card>
 								<div class="card_head">扫码跳转（基础）</div>
 								<div class="card_body">
-									<mm_qrcode :url="url"></mm_qrcode>
+									<expand_qrcode :url="url"></expand_qrcode>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -32,7 +32,7 @@
 							<mm_card>
 								<div class="card_head">二维码（内容）</div>
 								<div class="card_body">
-									<mm_qrcode :value="value"></mm_qrcode>
+									<expand_qrcode :value="value"></expand_qrcode>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -40,7 +40,7 @@
 							<mm_card>
 								<div class="card_head">扫码跳转（带图标和大小参数）</div>
 								<div class="card_body">
-									<mm_qrcode :url="url" :icon="icon" :width="220"></mm_qrcode>
+									<expand_qrcode :url="url" :icon="icon" :width="220"></expand_qrcode>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -48,7 +48,7 @@
 							<mm_card>
 								<div class="card_head">扫码跳转（带图标和颜色参数）</div>
 								<div class="card_body">
-									<mm_qrcode :url="url" :icon="icon" foreground="blue" :width="220"></mm_qrcode>
+									<expand_qrcode :url="url" :icon="icon" foreground="blue" :width="220"></expand_qrcode>
 								</div>
 							</mm_card>
 						</mm_col>
@@ -60,12 +60,12 @@
 </template>
 
 <script>
-	import mm_qrcode from '/src/components/content/mm_qrcode.vue';
+	import expand_qrcode from '/src/components/expand/expand_qrcode.vue';
 
 	export default {
 		template: __template__,
 		components: {
-			mm_qrcode
+			expand_qrcode
 		},
 		data() {
 			return {

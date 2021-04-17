@@ -1,5 +1,5 @@
 <template>
-	<mm_page id="page_tag">
+	<mm_page id="page_tab">
 		<header>
 			<mm_warp>
 				<mm_container>
