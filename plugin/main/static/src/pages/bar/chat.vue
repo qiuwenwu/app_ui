@@ -35,9 +35,6 @@
 			return {}
 		},
 		methods: {
-			func(name, param1, param2) {
-
-			}
 		}
 	}
 </script>

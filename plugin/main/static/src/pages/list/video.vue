@@ -24,7 +24,7 @@
 						<mm_col width="100">
 							<mm_view>
 								<control_select v-model="col" :options="options"></control_select>
-								<mm_btn class="btn_info" @click.native="set_layout()">切换排版方式</mm_btn>
+								<mm_btn class="btn_primary" @click.native="set_layout()">切换排版方式</mm_btn>
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">

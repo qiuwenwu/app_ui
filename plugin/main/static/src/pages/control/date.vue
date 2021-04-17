@@ -7,7 +7,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>操作栏</span>
+									<span>日期选择器</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -34,7 +34,8 @@
 		data() {
 			return {}
 		},
-		methods: {}
+		methods: {
+		}
 	}
 </script>
 

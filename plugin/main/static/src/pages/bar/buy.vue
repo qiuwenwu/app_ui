@@ -1,5 +1,5 @@
 <template>
-	<mm_page id="page_buy">
+	<mm_page id="page_chat">
 		<header>
 			<mm_warp>
 				<mm_container>
@@ -7,7 +7,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>购物栏</span>
+									<span>购买栏</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -35,9 +35,6 @@
 			return {}
 		},
 		methods: {
-			func(name, param1, param2) {
-
-			}
 		}
 	}
 </script>
