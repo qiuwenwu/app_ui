@@ -30,7 +30,8 @@
 						<mm_col width="100">
 							<mm_card>
 								<div class="card_body">
-									<list_base :col="col" :list="list" :class="'list-x list_base ' + list_layout[select]"></list_base>
+									<list_base :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+									</list_base>
 								</div>
 							</mm_card>
 						</mm_col>

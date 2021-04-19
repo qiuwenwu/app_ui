@@ -531,25 +531,25 @@
 						title: "图片列表",
 						name: "list_image",
 						url: "/list/image",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "文章列表",
 						name: "list_article",
 						url: "/list/article",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "通讯录列表",
 						name: "list_contact",
 						url: "/list/contact",
-						progress: 0
+						progress: 50
 					},
 					{
 						title: "消息列表",
 						name: "list_message",
 						url: "/list/message",
-						progress: 0
+						progress: 50
 					},
 					{
 						title: "新闻列表",
@@ -567,7 +567,7 @@
 						title: "商品列表",
 						name: "list_goods",
 						url: "/list/goods",
-						progress: 0
+						progress: 50
 					},
 					{
 						title: "问答列表",
@@ -579,19 +579,19 @@
 						title: "用户列表",
 						name: "list_user",
 						url: "/list/user",
-						progress: 0
+						progress: 50
 					},
 					{
 						title: "视频列表",
 						name: "list_video",
 						url: "/list/video",
-						progress: 0
+						progress: 50
 					},
 					{
 						title: "音乐列表",
 						name: "list_music",
 						url: "/list/music",
-						progress: 0
+						progress: 50
 					}
 				],
 				swiper: [{

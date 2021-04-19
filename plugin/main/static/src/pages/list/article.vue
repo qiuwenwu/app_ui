@@ -21,19 +21,28 @@
 			<mm_warp>
 				<mm_container>
 					<mm_row>
-						<mm_col width="100">
+						<mm_col width="33">
 							<mm_view>
 								<control_select v-model="col" :options="options"></control_select>
+							</mm_view>
+						</mm_col>
+						<mm_col width="33">
+							<mm_view>
 								<mm_btn class="btn_primary" @click.native="set_layout()">切换排版方式</mm_btn>
 							</mm_view>
 						</mm_col>
+						<mm_col width="33">
+							<mm_view>
+								<button class="btn_primary" @click="border = !border"><span v-if="border">无</span><span
+										v-else>加</span>边框</button>
+							</mm_view>
+						</mm_col>
 						<mm_col width="100">
-							<mm_card>
-								<div class="card_head">样式一</div>
-								<div class="card_body">
-									<list_article :col="col" :list="list"></list_article>
-								</div>
-							</mm_card>
+							<mm_view>
+							<div class="card_head">样式一</div>
+							<list_article :col="col" :list="list"
+								:class="list_layout[select] + (border ? ' icon-x icon-radius' : '')"></list_article>
+							</mm_view>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -46,15 +55,12 @@
 	export default {
 		data() {
 			return {
-				select: 0,
-				col: "4",
+				border: false,
+				select: 1,
+				col: "1",
 				list_layout: [
-					"item-lr img-small",
-					"item-ll img-small",
-					"item-ltb img-base",
-					"item-rtb img-base",
-					"item-rl img-base",
-					"item-rr img-base",
+					"item-ltb",
+					"item-rtb",
 					"item-tb"
 				],
 				options: [{
