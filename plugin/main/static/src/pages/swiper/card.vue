@@ -21,10 +21,17 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<mm_card class="silde_test">
-								<h5>默认块</h5>
-								<swiper_card :list="list"></swiper_card>
-							</mm_card>
+							<h5>默认块</h5>
+							<swiper_card :list="list">
+								<template scope="scope">
+									<div class="info">
+										<a :href="scope.row.url">
+											<p>標題:{{scope.row.title}}</p>
+											<img :src="scope.row.image" alt="">
+										</a>
+									</div>
+								</template>
+							</swiper_card>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -38,10 +45,21 @@
 		data() {
 			return {
 				list: [{
-					title: "标题",
-					url: "/",
-					image: "/img/default.png",
-				}]
+						title: "标题",
+						url: "/",
+						image: "/img/default.png",
+					},
+					{
+						title: "标题",
+						url: "/",
+						image: "/img/default.png",
+					},
+					{
+						title: "标题",
+						url: "/",
+						image: "/img/default.png",
+					}
+				]
 			}
 		}
 	}

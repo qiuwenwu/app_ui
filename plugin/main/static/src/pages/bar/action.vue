@@ -21,6 +21,7 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<bar_action :func="func_action" :list="list"></bar_action>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -30,11 +31,28 @@
 </template>
 
 <script>
+	import mixin from '/src/mixins/page.js'
 	export default {
+		mixins: [mixin],
 		data() {
-			return {}
+			return {
+				list: [{
+						title: "拍照中",
+						command: "taking_picture"
+					},
+					{
+						title: "选取",
+						command: "select"
+					}
+				]
+			}
 		},
-		methods: {}
+		methods: {
+			func_action(o) {
+				console.log("func_page");
+				console.log(o);
+			}
+		}
 	}
 </script>
 

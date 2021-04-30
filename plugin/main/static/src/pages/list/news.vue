@@ -28,7 +28,10 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<list_news :col="col" :list="list"></list_news>
+							<mm_view>
+									<list_news :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+									</list_news>
+							</mm_view>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -41,16 +44,12 @@
 	export default {
 		data() {
 			return {
-				select: 0,
-				col: "4",
+				select: 2,
+				col: "2",
 				list_layout: [
-					"item-lr img-small",
-					"item-ll img-small",
-					"item-ltb img-base",
-					"item-rtb img-base",
-					"item-rl img-base",
-					"item-rr img-base",
-					"item-tb"
+					"item-ltb img-larger",
+					"item-rtb img-larger",
+					"item-tb",
 				],
 				options: [{
 						name: "1列",

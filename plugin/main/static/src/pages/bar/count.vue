@@ -21,6 +21,7 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<bar_count :func="func_count"></bar_count>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -30,14 +31,22 @@
 </template>
 
 <script>
+	import mixin from '/src/mixins/page.js'
 	export default {
+		mixins: [mixin],
 		data() {
-			return {}
+			return {
+			}
 		},
 		methods: {
+			func_count(o){
+				console.log("page");
+				console.log(o);
+			}
 		}
 	}
 </script>
 
 <style>
+	
 </style>

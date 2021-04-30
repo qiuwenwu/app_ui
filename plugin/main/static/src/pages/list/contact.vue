@@ -1,6 +1,6 @@
 <template>
-	<!-- 联系人 -->
-	<mm_page id="page_contact">
+	<!-- 基础 -->
+	<mm_page id="page_base">
 		<header>
 			<mm_warp>
 				<mm_container>
@@ -8,7 +8,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>联系人</span>
+									<span>联系人列表</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -28,7 +28,12 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<list_contact :col="col" :list="list"></list_contact>
+							<mm_card>
+								<div class="card_body">
+									<list_contact :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+									</list_contact>
+								</div>
+							</mm_card>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -41,16 +46,11 @@
 	export default {
 		data() {
 			return {
-				select: 0,
-				col: "4",
+				select: 1,
+				col: "2",
 				list_layout: [
 					"item-lr img-small",
-					"item-ll img-small",
-					"item-ltb img-base",
-					"item-rtb img-base",
-					"item-rl img-base",
-					"item-rr img-base",
-					"item-tb"
+					"item-ltb img-base" 
 				],
 				options: [{
 						name: "1列",

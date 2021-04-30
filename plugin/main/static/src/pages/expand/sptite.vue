@@ -23,7 +23,7 @@
 						<mm_col width="100">
 							<mm_view>
 								<expand_sptite v-for="(o, i) in list" :key="i" :client="o.client" :name="o.name" :size="o.size" :pos="o.pos" :align="o.align"
-								 :tag="o.tag" :type="o.type" :src="o.src" background="o.background" :z-index="o.zIndex"></expand_sptite>
+								 :tag="o.tag" :type="o.type" :src="o.src" background="o.background" :z-index="o.zIndex" v-drag></expand_sptite>
 							</mm_view>
 							<mm_view>
 								<expand_sptite v-for="(o, i) in list_form" :key="i" :client="o.client" :name="o.name" :size="o.size" v-model="o.text"

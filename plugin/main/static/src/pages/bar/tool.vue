@@ -21,6 +21,12 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<bar_tool :func="func_tool"></bar_tool>
+						</mm_col>
+					</mm_row>
+					<mm_row>
+						<mm_col width="100">
+							<bar_tool :func="func_tool"  class="display-2"></bar_tool>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -30,14 +36,25 @@
 </template>
 
 <script>
+	import mixin from '/src/mixins/page.js'
 	export default {
+		mixins: [mixin],
 		data() {
 			return {}
 		},
 		methods: {
+			func_tool(o){
+				console.log(o);
+			}
 		}
 	}
 </script>
 
 <style>
+	main{
+	  min-height: 100vh;
+	 }
+	 main .mm_view{
+	  overflow: visible;
+	 }
 </style>

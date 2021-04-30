@@ -7,7 +7,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>轮播图</span>
+									<span>轮播卡片</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -21,16 +21,17 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<h5>轮播图默认块</h5>
-							<swiper_image :list="list">
+							<h5>默认块</h5>
+							<swiper_rotate_card :list="list">
 								<template scope="scope">
-									<div class="swiper_image">
+									<div class="info">
 										<a :href="scope.row.url">
-											<img :src="scope.row.image" alt="" class="image">
+											<p>{{scope.row.title}}</p>
+											<img :src="scope.row.image" alt="">
 										</a>
 									</div>
 								</template>
-							</swiper_image>
+							</swiper_rotate_card>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -44,17 +45,27 @@
 		data() {
 			return {
 				list: [{
-						title: "标题",
+						title: "黄金",
 						url: "/",
 						image: "/img/default.png",
 					},
 					{
-						title: "标题",
+						title: "消费电子",
 						url: "/",
 						image: "/img/default.png",
 					},
 					{
-						title: "标题",
+						title: "业绩优异",
+						url: "/",
+						image: "/img/default.png",
+					},
+					{
+						title: "固定限期",
+						url: "/",
+						image: "/img/default.png",
+					},
+					{
+						title: "定投榜单",
 						url: "/",
 						image: "/img/default.png",
 					}
@@ -65,8 +76,4 @@
 </script>
 
 <style>
-.swiper_image .image{
-	width: 100%;
-	height: 18.75rem;
-}
 </style>

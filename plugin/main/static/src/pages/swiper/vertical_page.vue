@@ -1,5 +1,5 @@
 <template>
-	<mm_page id="page_title">
+	<mm_page id="page_card">
 		<header>
 			<mm_warp>
 				<mm_container>
@@ -7,7 +7,7 @@
 						<mm_col width="100">
 							<mm_view url="/">
 								<h3>
-									<span>标题栏</span>
+									<span>页面</span>
 									<span class="fr">&lt; 返回</span></router-link>
 								</h3>
 							</mm_view>
@@ -21,7 +21,20 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<bar_title :func="func_title"></bar_title>
+							<swiper_vertical_page :func="func_page">
+								<div>
+									默认页
+								</div>
+								<div slot="page1">
+									第一页
+								</div>
+								<div slot="page2">
+									第二页
+								</div>
+								<div slot="page3">
+									第三页
+								</div>
+							</swiper_vertical_page>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -31,16 +44,13 @@
 </template>
 
 <script>
-	import mixin from '/src/mixins/page.js'
 	export default {
-		mixins: [mixin],
 		data() {
 			return {}
 		},
-		methods: {
-			func_title(o) {
-				console.log("func_page");
-				console.log(o);
+		methods:{
+			func_page(index){
+				console.log('触发了', index);
 			}
 		}
 	}

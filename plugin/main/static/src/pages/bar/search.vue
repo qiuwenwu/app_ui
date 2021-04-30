@@ -21,6 +21,8 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<bar_search :func="func_search" v-model="val_input"></bar_search>
+							输入内容：{{val_input}}
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -32,11 +34,14 @@
 <script>
 	export default {
 		data() {
-			return {}
+			return {
+				val_input:"默认值",
+				}
 		},
 		methods: {
-			func(name, param1, param2) {
-
+			func_search(o) {
+				console.log('page');
+				console.log(o);
 			}
 		}
 	}

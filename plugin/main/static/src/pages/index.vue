@@ -8,7 +8,8 @@
 							<mm_view>
 								<h3>
 									<span>MM-UI组件示例</span>
-									<router-link to="/design" class="arrow" style="position: relative;"><span>点击查看</span> <span class="font_primary">设计规范</span>
+									<router-link to="/design" class="arrow" style="position: relative;">
+										<span>点击查看</span> <span class="font_primary">设计规范</span>
 									</router-link>
 								</h3>
 							</mm_view>
@@ -190,10 +191,10 @@
 						progress: 0
 					},
 					{
-						title: "广告",
+						title: "广告栏",
 						name: "bar_ad",
 						url: "/bar/ad",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "购买栏",
@@ -217,13 +218,13 @@
 						title: "筛选栏",
 						name: "bar_filter",
 						url: "/bar/filter",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "菜单栏",
 						name: "bar_menu",
 						url: "/bar/menu",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "搜索栏",
@@ -235,25 +236,25 @@
 						title: "排序栏",
 						name: "bar_sort",
 						url: "/bar/sort",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "标签栏",
 						name: "bar_tab",
 						url: "/bar/tab",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "标题栏",
 						name: "bar_title",
 						url: "/bar/title",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "工具栏",
 						name: "bar_tool",
 						url: "/bar/tool",
-						progress: 0
+						progress: 10
 					},
 					{
 						title: "用户栏",
@@ -463,13 +464,13 @@
 						title: "主导航",
 						name: "nav_main",
 						url: "/nav/main",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "侧边导航",
 						name: "nav_side",
 						url: "/nav/side",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "顶部导航",
@@ -481,19 +482,19 @@
 						title: "底部导航",
 						name: "nav_bottom",
 						url: "/nav/bottom",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "快捷导航",
 						name: "nav_quick",
 						url: "/nav/quick",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "用户导航",
 						name: "nav_user",
 						url: "/nav/user",
-						progress: 0
+						progress: 100
 					}
 				],
 				form: [{
@@ -543,86 +544,98 @@
 						title: "通讯录列表",
 						name: "list_contact",
 						url: "/list/contact",
-						progress: 50
+						progress: 100
 					},
 					{
 						title: "消息列表",
 						name: "list_message",
 						url: "/list/message",
-						progress: 50
+						progress: 100
 					},
 					{
 						title: "新闻列表",
 						name: "list_news",
 						url: "/list/news",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "号码列表",
 						name: "list_number",
 						url: "/list/number",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "商品列表",
 						name: "list_goods",
 						url: "/list/goods",
-						progress: 50
+						progress: 100
 					},
 					{
 						title: "问答列表",
 						name: "list_question",
 						url: "/list/question",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "用户列表",
 						name: "list_user",
 						url: "/list/user",
-						progress: 50
+						progress: 100
 					},
 					{
 						title: "视频列表",
 						name: "list_video",
 						url: "/list/video",
-						progress: 50
+						progress: 100
 					},
 					{
 						title: "音乐列表",
 						name: "list_music",
 						url: "/list/music",
-						progress: 50
+						progress: 100
 					}
 				],
 				swiper: [{
 						title: "卡片轮播",
 						name: "swiper_card",
 						url: "/swiper/card",
-						progress: 0
+						progress: 100
+					},
+					{
+						title: "旋转卡片轮播",
+						name: "swiper_rotate_card",
+						url: "/swiper/rotate_card",
+						progress: 80
 					},
 					{
 						title: "图片轮播",
 						name: "swiper_image",
 						url: "/swiper/image",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "文本轮播",
 						name: "swiper_text",
 						url: "/swiper/text",
-						progress: 0
+						progress: 100
 					},
 					{
 						title: "页面轮播",
 						name: "swiper_page",
 						url: "/swiper/page",
-						progress: 0
+						progress: 100
+					},
+					{
+						title: "页面竖直轮播",
+						name: "swiper_vertical_page",
+						url: "/swiper/vertical_page",
+						progress: 100
 					},
 					{
 						title: "菜单轮播",
 						name: "swiper_menu",
 						url: "/swiper/menu",
-						progress: 0
+						progress: 100
 					}
 				],
 				table: [{

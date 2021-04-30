@@ -21,6 +21,8 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
+							<bar_chat :func="func_chat" v-model="val_input"></bar_chat>
+							输入内容：{{val_input}}
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -30,11 +32,19 @@
 </template>
 
 <script>
+	import mixin from '/src/mixins/page.js'
 	export default {
+		mixins: [mixin],
 		data() {
-			return {}
+			return {
+				val_input:"默认值"
+			}
 		},
 		methods: {
+			func_chat(o){
+				console.log("page");
+				console.log(o);
+			},
 		}
 	}
 </script>

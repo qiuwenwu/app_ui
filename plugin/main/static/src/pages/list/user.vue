@@ -28,7 +28,10 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<list_user :col="col" :list="list"></list_user>
+							<mm_view>
+								<list_user :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+								</list_user>
+							</mm_view>
 						</mm_col>
 					</mm_row>
 				</mm_container>
@@ -42,14 +45,10 @@
 		data() {
 			return {
 				select: 0,
-				col: "4",
+				col: "2",
 				list_layout: [
-					"item-lr img-small",
-					"item-ll img-small",
-					"item-ltb img-base",
-					"item-rtb img-base",
-					"item-rl img-base",
-					"item-rr img-base",
+					"item-ltb img-big",
+					"item-rtb img-big",
 					"item-tb"
 				],
 				options: [{

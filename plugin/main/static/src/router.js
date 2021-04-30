@@ -580,6 +580,13 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			}
 		},
 		{
+			// 旋转卡片轮播
+			path: "/swiper/rotate_card",
+			component: function(resolve) {
+				return require(['vue!./pages/swiper/rotate_card.vue'], resolve);
+			}
+		},
+		{
 			// 图片轮播
 			path: "/swiper/image",
 			component: function(resolve) {
@@ -598,6 +605,13 @@ define(["Vue", "VueRouter"], function(Vue, VueRouter) {
 			path: "/swiper/page",
 			component: function(resolve) {
 				return require(['vue!./pages/swiper/page.vue'], resolve);
+			}
+		},
+		{
+			// 页面竖方向轮播
+			path: "/swiper/vertical_page",
+			component: function(resolve) {
+				return require(['vue!./pages/swiper/vertical_page.vue'], resolve);
 			}
 		},
 		{
