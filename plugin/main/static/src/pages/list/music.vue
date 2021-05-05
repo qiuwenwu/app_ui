@@ -28,7 +28,7 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<mm_view>
+							<mm_view class="card">
 									<list_music :col="col" :list="list" :class="'list-x ' + list_layout[select]">
 									</list_music>
 							</mm_view>

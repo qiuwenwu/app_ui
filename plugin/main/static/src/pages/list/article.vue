@@ -38,10 +38,13 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<mm_view>
-							<div class="card_head">样式一</div>
-							<list_article :col="col" :list="list"
-								:class="list_layout[select] + (border ? ' icon-x icon-radius' : '')"></list_article>
+							<mm_view class="card">
+								<div class="card_head">样式一</div>
+								<div class="card_body">
+									<list_article :col="col" :list="list"
+										:class="list_layout[select] + (border ? ' icon-x icon-radius' : '')">
+									</list_article>
+								</div>
 							</mm_view>
 						</mm_col>
 					</mm_row>

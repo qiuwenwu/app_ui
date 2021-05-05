@@ -32,7 +32,7 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<mm_view>
+							<mm_view class="card">
 								<h5>样式一</h5>
 								<list_image :col="col" :list="list"
 									:class="list_layout[select] + (border ? ' icon-x icon-radius' : '')"></list_image>

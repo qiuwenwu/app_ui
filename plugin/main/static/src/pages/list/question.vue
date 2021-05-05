@@ -29,7 +29,7 @@
 						</mm_col>
 						<mm_col width="100">
 							<mm_view>
-								<list_question :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+								<list_question :col="col" :list="list" :class="list_layout[select]">
 								</list_question>
 							</mm_view>
 						</mm_col>
@@ -103,4 +103,9 @@
 </script>
 
 <style>
+	.list_question .mm_item {
+		background: #fff;
+		box-shadow: 0 0.25rem 0.5rem 0 rgb(7 17 27 / 10%);
+		margin-bottom: 1rem;
+	}
 </style>

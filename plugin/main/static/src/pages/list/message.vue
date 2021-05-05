@@ -28,8 +28,8 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<mm_view>
-									<list_message :col="col" :list="list" :class="'list-x ' + list_layout[select]">
+							<mm_view class="card">
+									<list_message :col="col" :list="list" :class="list_layout[select]">
 									</list_message>
 							</mm_view>
 						</mm_col>

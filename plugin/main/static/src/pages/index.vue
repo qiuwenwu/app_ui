@@ -683,8 +683,4 @@
 		margin: auto;
 		padding-bottom: 1rem;
 	}
-
-	#page_root .card_body {
-		padding: 0;
-	}
 </style>

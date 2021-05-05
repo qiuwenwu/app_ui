@@ -21,8 +21,8 @@
 				<mm_container>
 					<mm_row>
 						<mm_col width="100">
-							<mm_view>
-									<bar_user :func="func_user" class="item-lr" :list="list">
+							<mm_view class="card">
+									<bar_user :func="func_user" class="item-lr img-base" :list="list">
 									</bar_user>
 							</mm_view>
 						</mm_col>

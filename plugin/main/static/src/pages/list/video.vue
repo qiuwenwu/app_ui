@@ -28,7 +28,7 @@
 							</mm_view>
 						</mm_col>
 						<mm_col width="100">
-							<mm_view>
+							<mm_view class="card">
 									<list_video :col="col" :list="list" :class="'list-x ' + list_layout[select]">
 									</list_video>
 							</mm_view>
