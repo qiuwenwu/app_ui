@@ -26,7 +26,7 @@
 								<div class="card_body">
 									<mm_btn class="btn_default">默认</mm_btn>
 									<mm_btn class="btn_primary">主要</mm_btn>
-									<mm_btn class="btn_primary">信息</mm_btn>
+									<mm_btn class="btn_info">信息</mm_btn>
 									<mm_btn class="btn_success">成功</mm_btn>
 									<mm_btn class="btn_warning">错误</mm_btn>
 									<mm_btn class="btn_danger">警告</mm_btn>
@@ -39,7 +39,7 @@
 								<div class="card_body">
 									<mm_btn class="btn_default-x">默认</mm_btn>
 									<mm_btn class="btn_primary-x">主要</mm_btn>
-									<mm_btn class="btn_primary-x">信息</mm_btn>
+									<mm_btn class="btn_info-x">信息</mm_btn>
 									<mm_btn class="btn_success-x">成功</mm_btn>
 									<mm_btn class="btn_warning-x">错误</mm_btn>
 									<mm_btn class="btn_danger-x">警告</mm_btn>
@@ -59,7 +59,7 @@
 									</mm_group>
 									<mm_group>
 										<mm_btn class="btn_primary">主要</mm_btn>
-										<mm_btn class="btn_primary">信息</mm_btn>
+										<mm_btn class="btn_info">信息</mm_btn>
 										<mm_btn class="btn_danger">警告</mm_btn>
 									</mm_group>
 								</div>
@@ -78,7 +78,7 @@
 									</mm_group>
 									<mm_group class="b-a mtb">
 										<mm_btn class="btn_primary">主要</mm_btn>
-										<mm_btn class="btn_primary">信息</mm_btn>
+										<mm_btn class="btn_info">信息</mm_btn>
 										<mm_btn class="btn_danger">警告</mm_btn>
 									</mm_group>
 								</div>
