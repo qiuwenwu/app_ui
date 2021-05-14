@@ -18,8 +18,7 @@
 
 <style>
 	main {
-		padding: 2rem 0;
-		padding-top: 5rem !important;
+		padding: 2.5rem 0;
 	}
 	.content {
 		color: #999;

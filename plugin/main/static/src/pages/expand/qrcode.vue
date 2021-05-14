@@ -1,6 +1,6 @@
 <template>
 	<mm_page id="page_qrcode">
-		<header>
+		<header class="header">
 			<mm_warp>
 				<mm_container>
 					<mm_row>
@@ -23,7 +23,7 @@
 						<mm_col class="col-12 col-md-6">
 							<mm_card>
 								<div class="card_head">扫码跳转（基础）</div>
-								<div class="card_body">
+								<div class="card_body pa center">
 									<expand_qrcode :url="url"></expand_qrcode>
 								</div>
 							</mm_card>
@@ -31,7 +31,7 @@
 						<mm_col class="col-12 col-md-6">
 							<mm_card>
 								<div class="card_head">二维码（内容）</div>
-								<div class="card_body">
+								<div class="card_body pa center">
 									<expand_qrcode :value="value"></expand_qrcode>
 								</div>
 							</mm_card>
@@ -39,7 +39,7 @@
 						<mm_col class="col-12 col-md-6">
 							<mm_card>
 								<div class="card_head">扫码跳转（带图标和大小参数）</div>
-								<div class="card_body">
+								<div class="card_body pa center">
 									<expand_qrcode :url="url" :icon="icon" :width="220"></expand_qrcode>
 								</div>
 							</mm_card>
@@ -47,7 +47,7 @@
 						<mm_col class="col-12 col-md-6">
 							<mm_card>
 								<div class="card_head">扫码跳转（带图标和颜色参数）</div>
-								<div class="card_body">
+								<div class="card_body pa center">
 									<expand_qrcode :url="url" :icon="icon" foreground="blue" :width="220"></expand_qrcode>
 								</div>
 							</mm_card>

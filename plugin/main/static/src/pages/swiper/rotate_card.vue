@@ -1,6 +1,6 @@
 <template>
 	<mm_page id="page_card">
-		<header>
+		<header class="header">
 			<mm_warp>
 				<mm_container>
 					<mm_row>
@@ -23,7 +23,7 @@
 						<mm_col width="100">
 							<h5>默认块</h5>
 							<swiper_rotate_card :list="list">
-								<template scope="scope">
+								<template slot-scope="scope">
 									<div class="info">
 										<a :href="scope.row.url">
 											<p>{{scope.row.title}}</p>
